@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.jpg" type="image/x-icon">
+    <title>Happy 5k!</title>
+</head>
+<body>
+    <div class="main_header">
+        <div class="center_div">
+          <p>Congratulations for 5k Virej!</p>
+        </div>
+        <p class="credit-text">Developed by Sreehari.S</p>
+        <p class="quoet">Virej is the next Dani!<br>He is a good programmer and game developer.<br> <span class="credit"><span style="color: transparent;">------------------------------------</span>~ Sreehari The Idiot</span></p>
+    </div>
+    <canvas id="my-canvas"></canvas>
+
+    <script src="./index.min.js"></script>
+    <script>
+        var confettiElement = document.getElementById('my-canvas');
+        var confettiSettings = { target: confettiElement };
+        var confetti = new ConfettiGenerator(confettiSettings);
+        confetti.render();
+    </script>
+    <style>
+    *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Kristi", cursive;
+}
+p{
+  color: yellow;
+  font-size: 62.5%;
+}
+.credit-text{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  font-size: 24px;
+}
+.quoet{
+  color: lightgreen;
+  font-size: 19px;
+}
+.credit{
+  color: red;
+}
+.main_header {
+  width: 100vw;
+  height: 100vh;
+  background: #000;
+  display: grid;
+  place-items: center;
+}
+.center_div {
+  min-width: 50vw;
+  height: 40vh;
+  color: #000;
+  text-shadow: 0 0 2rem rgba(0, 0, 0, 0.5);
+  font-size: 7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  text-align:center;
+}
+canvas{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+@media screen and (max-width: 768px){
+  html {
+    font-size: 35%;
+  }
+}</style>
+</body>
+</html>
